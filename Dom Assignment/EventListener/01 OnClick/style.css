@@ -1,0 +1,21 @@
+/* <!-- CSS CODE --> */
+    
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(162, 159, 159);
+}
+
+#btn{
+    color: yellow;
+    background: black;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+

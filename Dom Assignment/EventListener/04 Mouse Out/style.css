@@ -1,0 +1,31 @@
+
+/* reset the CSS value */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* target in the body */
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#messege{
+    font-size: 30px;
+    width: 50vb;
+    text-align: center;
+    font-weight: 600;
+    padding: 10% 0px;
+    border-radius: 10px;
+    background-color: aqua;
+    border: red solid 3px;
+    color: rgb(3, 3, 99);
+    cursor: pointer;
+    
+}
+
+

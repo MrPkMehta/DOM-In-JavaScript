@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* appling css to paragraph */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#dblclk{
+    font-size: 45px;
+    font-weight: 600;
+    border: black solid 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(105, 39, 39);
+    color: aqua;
+    border-radius: 8px;
+    box-shadow: 0 0 10px yellow;
+}
