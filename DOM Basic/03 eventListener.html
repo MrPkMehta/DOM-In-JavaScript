@@ -1,0 +1,47 @@
+ <!--Event Listener -    It allows you to respond to user interactions, such as clicks, mouse movements, keypresses, and more. Event listeners are commonly used to add interactivity and dynamic behavior to web pages. -->
+
+<!-- 
+inside the event listener we have to mention two things 1. eventlistener property and 2. and comaa seperated function name which is called. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+   
+
+    <!-- normal html -->
+    <h1>Event Listener in JavaScript</h1>
+    <p id="js">click anywhere on webpage</p>
+    
+    <!-- hear the event listener is added inside the element -->
+    <button id="btn" onclick="hey( )">Login</button>
+
+
+
+    <!-- javascript code -->
+    <script>
+        document.addEventListener("click", hello) //it means that when we click on the webpage hellow function is called
+        function hello() {
+            document.getElementById("js").innerText = "Namaste, Baccho";
+            document.getElementById("js").style.color = "red";
+        }
+
+        // hey  function for button
+        function hey() {
+            let btnn = document.getElementById("btn");//store this document into a variable called btnn.
+            btnn.style.color = "blue"; //access style property with the help of variable btnn.
+
+            //access style property directly by document.
+            document.getElementById("btn").innerText = "Logout";
+            document.getElementById("btn").style.fontSize = "30px";
+            document.getElementById("btn").style.padding = "10px 20px";
+            document.getElementById("btn").style.borderRadius = "10px";
+            document.getElementById("btn").style.backgroundColor = "black";
+           
+        }
+    </script>
+</body>
+</html>

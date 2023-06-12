@@ -1,0 +1,95 @@
+<!-- To access the element with the help of java script -->
+<!-- there are four ways to access  to access the element with the help of javascript
+1. by ID
+2. by Class
+3. by Tag Name
+4. Query Selector   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access element</title>
+</head>
+<body>
+    <style>
+        .para{
+            font-size: 35px;
+            font-weight: 900;
+            color: rgb(136, 136, 10);
+            text-decoration: underline rgb(181, 6, 6);
+        }
+    </style>
+
+    <!-- By ID -->
+    <p class="para">Access element by id</p>
+
+    <p id="abc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quod minus sit <span> consequuntur sint repellat temporibus</span> dolore pariatur ad voluptatibus?</p>
+
+
+    <!-- By class -->
+    <p class="para">Access Element by class</p>
+
+    <h2 class="classs">Hey</h2>
+    <h2 class="classs">Hello</h2>
+    <h2 class="classs">Hola</h2>
+
+
+
+    <!-- By Tag Name -->
+    <p class="para">Access elemrnt by Tag NAme</p>
+
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+    <h1>four</h1>
+
+
+
+    <!-- Query Selector -->
+    <P class="para">Access Element By Query Selector</P>
+
+    <h3>hello pw skills</h3>
+    <h3 id = "ids">my name is pk</h3>
+    <h3 class="clas">how are you</h3>
+
+
+
+    <script>
+
+        // byId
+        let var1 = document.getElementById("abc");
+        console.log(var1.innerText);
+        var1.style.color = "red";
+        var1.style.fontSize = "25px";
+
+
+        // by Class
+        let var2 = document.getElementsByClassName("classs");
+        console.log(var2.innerText); 
+        var2[1].style.color = "blue"; //change the color of 2nd index
+        var2[2].innerHTML = " <i> Namaste </i>"; //change the hola to namaste
+        
+
+        //by Tag Name
+        let var3 = document.getElementsByTagName("h1");
+        console.log(var3[3].innerText);
+        var3[2].style.fontSize = "40px"; //change the 3rd index element to 40px
+        var3[0].innerText = "changed"; //change the 1st element text to changed 
+        var3[0].innerHTML = "<i> five </i>" // again change the 1st element text to five
+        var3[3].style.color = "blue";
+
+
+
+        // Query Selector
+        let var4 = document.querySelectorAll("h3");
+        console.log(var4.innerText);
+        var4.className = "qwerty";
+        var4[1].style.color = "red";
+
+
+    </script>
+</body>
+</html>

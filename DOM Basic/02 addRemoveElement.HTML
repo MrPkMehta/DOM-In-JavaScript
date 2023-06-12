@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom javascript</title>
+</head>
+<body>
+    <!-- to add and remove the content of HTML with the help of JavaScript -->
+    
+
+    <!-- to remove the content -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <h2>Below content is displayed with the help of javascript👇</h2>
+
+    <script>
+        // add element with the help of javascript
+        // append child - it helps to display the content on the webpage 
+        // process - first we have to make then display
+        
+        let title = document.createElement("h1"); //make an element
+        title.className = "pw";   //give the class name
+        title.style.fontSize = "35px"; //Change the font size
+        title.textContent = "Hello, How are you"; //write content on it
+        title.style.color = "blue";
+        title.style.textDecoration = "underline";
+        title.style.textDecorationColor = "black";
+        document.body.appendChild (title); //to display the content on the webpage 
+
+
+
+        // to remove the content from the webpage 
+        //prcess - first we have to catch then remove
+
+        let var1 = document.querySelector("ul"); //
+        console.log("var1");
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+        for (list of lists) { //select all the list content
+            var1.removeChild(list) //it helps to remove all the child of the UL.
+            // var1.style.textDecoration = "underline";  //it will underline the all list content
+        }
+    </script>
+</body>
+</html>
